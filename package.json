@@ -7,8 +7,7 @@
     "minify": "html-minifier --collapse-whitespace --conservative-collapse --remove-comments --collapse-boolean-attributes --decode-entities --case-sensitive --remove-empty-attributes --trim-custom-fragments --minify-css true static/raw_html/index.html -o static/html/index.html",
     "build": "webpack --config ./webpack_config/webpack.config.dev.js",
     "build-d": "webpack --watch --config ./webpack_config/webpack.config.dev.js",
-    "build-prod": "webpack --config ./webpack_config/webpack.config.js",
-    "server": "webpack --config ./webpack_config/webpack.config.js && nodemon"
+    "server": "webpack --config ./webpack_config/webpack.config.dev.js && nodemon"
   },
   "author": "",
   "license": "ISC",
