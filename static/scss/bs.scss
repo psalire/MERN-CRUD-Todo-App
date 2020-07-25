@@ -1,0 +1,61 @@
+
+// RFS configurations
+// $enable-responsive-font-sizes: true;
+// $rfs-base-font-size: 1.2rem;
+// $rfs-factor: 2;
+
+@import "~bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap');
+html, body {
+    width: 100vw;
+    min-height: 100vh;
+}
+body {
+    font-family: 'Manrope', sans-serif;
+}
+#main {
+    display: initial;
+}
+#todos_table, #completes_table {
+    max-width: 90vw;
+    white-space: nowrap;
+    @extend .mx-auto;
+    @extend .table;
+    @extend .table-sm;
+    @extend .table-hover;
+    @extend .table-bordered;
+}
+#todos_table thead,
+#completes_table thead {
+    @extend .thead-light;
+}
+#todos_table thead th, #todos_table tbody td,
+#completes_table thead th, #completes_table tbody td {
+    vertical-align: middle;
+}
+.navlink_container {
+    width: 33.3%;
+    @extend .text-center;
+}
+.navlink {
+    @include font-size(1.05rem, true);
+}
+.todo_forms {
+    @extend .w-75;
+    @extend .mx-auto;
+}
+.todo_btn {
+    @extend .btn;
+    @extend .btn-primary;
+    @extend .rounded-pill;
+}
+.content_header {
+    width: 90vw;
+    @extend .mx-auto;
+    @extend .text-center;
+    @extend .pt-1;
+}
+.trash, .done {
+    visibility: hidden;
+    float: right;
+}
